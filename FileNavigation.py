@@ -1,10 +1,6 @@
 import sublime, sublime_plugin
 import glob, os
 
-# Display a quick panel with the other files in the directory of the current file
-# { "keys": ["ctrl+shift+o"], "command": "open_file_in_folder"}
-# https://gist.github.com/jbjornson/1178613
-
 class FileNavigationHelper(object):
     _instance = None
 
