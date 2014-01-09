@@ -1,0 +1,9 @@
+[
+    // Display a quick panel with the other files in the directory
+    { "keys": ["ctrl+shift+o"], "command": "file_navigation"},
+    // Quick-open the current file navigation entry
+    { "keys": ["right"], "command": "quick_open_file_navigation", "context": [
+        { "key": "overlay_visible", "operator": "equal", "operand": true },
+        { "key": "setting.file_navigation_active", "operator": "equal", "operand": true }
+    ]}
+]
